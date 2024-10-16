@@ -1,0 +1,95 @@
+$main-bg-color: white;
+$main-text-color: #30324B;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('./assets/fonts/MullerRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('./assets/fonts/MullerBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+}
+
+body {
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  all: unset;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+input {
+  appearance: none;
+  all: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+  vertical-align: bottom;
+}
+
+.root {
+  width: 100%;
+}
